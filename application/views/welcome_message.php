@@ -10,7 +10,7 @@
 
 <body>
 	<ul>
-		<li><a href=""></a></li>
+		<li><a href="<?= base_url('ut')?>">ci unit test</a></li>
 	</ul>
 </body>
 

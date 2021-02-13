@@ -21,4 +21,11 @@ class Welcome extends CI_Controller
 		$this->unit->run($test, $expected_result, $test_name);
 		echo $this->unit->report();
 	}
+
+	public function image_intervention()
+	{
+		require getcwd() . '/vendor/autoload.php';
+		$manager = new \Intervention\Image\ImageManager;
+		$manager->make(APPPATH . '/third_party/img.jpeg')->fit(50, 50)->save(APPPATH . '/third_party/img_mini.jpeg');
+	}
 }

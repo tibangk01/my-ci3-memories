@@ -10,8 +10,7 @@
 
 <body>
 	<ul>
-		<li><a href="<?= base_url('ut')?>">Ci unit test</a></li>
-		<li><a href="<?= base_url('ii')?>">Image Intervention</a></li>
+		<li><a href=""></a></li>
 	</ul>
 </body>
 

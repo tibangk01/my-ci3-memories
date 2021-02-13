@@ -28,4 +28,27 @@ class Welcome extends CI_Controller
 		$manager = new \Intervention\Image\ImageManager;
 		$manager->make(APPPATH . '/third_party/img.jpeg')->fit(50, 50)->save(APPPATH . '/third_party/img_mini.jpeg');
 	}
+
+	public function mail()
+	{
+		$this->load->config('email');
+		$this->load->library('email');
+
+		$from = $this->config->item('smtp_user');
+		$to = 'solhub.group@gmail.com';
+		$subject = 'Fake subject';
+		$message = 'Fake Message';
+
+		$this->email->set_newline("\r\n");
+		$this->email->from($from, 'Admin');
+		$this->email->to($to);
+		$this->email->subject($subject);
+		$this->email->message($message);
+
+		if ($this->email->send()) {
+			echo 'Your Email has successfully been sent.';
+		} else {
+			show_error($this->email->print_debugger());
+		}
+	}
 }

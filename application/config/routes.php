@@ -53,6 +53,11 @@ $route['default_controller'] = 'welcome';
 $route['ut'] = 'welcome/unit_test';
 $route['ii'] = 'welcome/image_intervention';
 $route['mail'] = 'welcome/mail';
+# auth routes
+$route['auth'] = 'auth_controller/index';
+$route['rp'] = 'auth_controller/reset_password';
+$route['cp'] = 'auth_controller/change_password';
+$route['up'] = 'auth_controller/update_password';
 
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

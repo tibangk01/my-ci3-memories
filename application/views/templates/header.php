@@ -15,15 +15,15 @@
 </head>
 
 <body>
-	<h2>List of tested and validated functionalities</h2>
+
+<h2>List of tested and validated functionalities</h2>
 	<img src="<?= base_url('application/third_party/test.jpg')?>" alt="test">
 	<div>
 		<ul>
+			<li><a href="<?= base_url() ?>">Home</a></li>
 			<li><a href="<?= base_url('ut') ?>">ci unit test</a></li>
 			<li><a href="<?= base_url('ii') ?>">php image Intervention</a></li>
 			<li><a href="<?= base_url('mail') ?>">send mail with: gmail, mailtrap or sendinblue email servers</a></li>
+			<li><a href="<?= base_url('auth') ?>">Password recovery</a></li>
 		</ul>
 	</div>
-</body>
-
-</html>

@@ -16,6 +16,7 @@
 
 <body>
 	<h2>List of tested and validated functionalities</h2>
+	<img src="<?= base_url('application/third_party/test.jpg')?>" alt="test">
 	<div>
 		<ul>
 			<li><a href="<?= base_url('ut') ?>">ci unit test</a></li>

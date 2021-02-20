@@ -26,7 +26,7 @@ class Welcome extends CI_Controller
 	{
 		require getcwd() . '/vendor/autoload.php';
 		$manager = new \Intervention\Image\ImageManager;
-		$manager->make(APPPATH . '/third_party/img.jpeg')->fit(50, 50)->save(APPPATH . '/third_party/img_mini.jpeg');
+		$manager->make(APPPATH .'third_party/test.jpg')->fit(1920 , 649)->save(APPPATH.'../assets/test-fit.jpg');
 	}
 
 	public function mail()
